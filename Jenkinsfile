@@ -1,6 +1,6 @@
 pipeline{
     environment {
-        imagename = "saifromdhane/solarenergy_front"
+        imagename = "abeerab/frontimage"
         registryCredential = "dockerhub_credentials"
         // dockerImage = ''
         def scannerHome = tool 'sonarqube-scanner'
@@ -16,7 +16,7 @@ pipeline{
                         -Dsonar.sources=. \
                         -Dsonar.host.url=http://localhost:9000 \
                         -Dsonar.login=admin \
-                        -Dsonar.password=trythisagain96"
+                        -Dsonar.password=admin"
                     } 
                 }
             }
