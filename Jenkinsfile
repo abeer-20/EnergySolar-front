@@ -14,7 +14,7 @@ pipeline{
                     sh "${scannerHome}/bin/sonar-scanner \
                         -Dsonar.projectKey=solarenergy-frontend \
                         -Dsonar.sources=. \
-                        -Dsonar.host.url=http://localhost:9000 \
+                        -Dsonar.host.url=http://54.217.252.229:9000/ \
                         -Dsonar.login=admin \
                         -Dsonar.password=admin"
                     } 
