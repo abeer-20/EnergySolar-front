@@ -24,8 +24,8 @@ pipeline{
         stage("build"){
             
             steps{
-                sh "npm install"
-                sh "npm run build"
+                sh '/home/ubuntu/.nvm/versions/node/v14.16.0/bin/npm install'
+                sh '/home/ubuntu/.nvm/versions/node/v14.16.0/bin/npm run build'
             }
         }
         
